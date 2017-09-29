@@ -1,0 +1,14 @@
+.NavigationBar ul {
+    background-color: blue;
+}
+
+.NavigationBar  ul > li {
+    background-color: red;
+}
+.NavigationBar  ul > li.hello {
+    background-color: green;
+}
+
+.NavigationBar p.caption {
+    color: white;
+}
