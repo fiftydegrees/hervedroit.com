@@ -1,18 +1,27 @@
 /* eslint-disable */
 
+const settings = require('./webpack.settings.js');
 const path = require('path');
+const HTMLWebpackPlugin = require('html-webpack-plugin');
+
+/*
+ * Plugins setup
+*/
+
+const HTMLWebpackPluginConfig = new HTMLWebpackPlugin({
+    template: `${settings.workingDirectory}/index.html`,
+    filename: './index.html',
+    inject: 'body',
+});
+
+/* End of Plugins setup */
 
 let config = {
     context: settings.workingDirectory,
     entry: './index.jsx',
-    devServer: {
-        historyApiFallback: true,
-        contentBase: './',
-    },
-    devtool: 'source-map',
     output: {
         filename: 'index.js',
-        path: __dirname + '/dist',
+        path: settings.buildDirectory,
     },
     resolve: {
         extensions: [

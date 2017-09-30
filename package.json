@@ -1,21 +1,18 @@
 {
   "name": "hervedroitcom",
   "version": "1.0.0",
-  "description": "This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "node node_modules/webpack-dev-server/bin/webpack-dev-server.js --open --config ./webpack/webpack.config.development.js",
+    "build": "node node_modules/webpack/bin/webpack.js --config ./webpack/webpack.config.production.js"
   },
   "repository": {
     "type": "git",
     "url": "git+ssh://git@gitlab.com/herve.droit/hervedroitcom.git"
   },
-  "author": "",
+  "author": "Hervé Droit",
   "license": "ISC",
-  "bugs": {
-    "url": "https://gitlab.com/herve.droit/hervedroitcom/issues"
-  },
-  "homepage": "https://gitlab.com/herve.droit/hervedroitcom#README",
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-eslint": "^8.0.0",
