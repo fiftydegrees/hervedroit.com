@@ -1,31 +1,40 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import styles from './NavigationBar.css';
+import CSSModules from 'react-css-modules';
+import styles from './NavigationBar.scss';
 
-export default class NavigationBar extends Component {
+class NavigationBar extends Component {
     render() {
         return (
             <div
-                className={styles.NavigationBar}>
+                styleName='NavigationBar'>
                 <ul>
-                    <li className={styles.hello}>
+                    <li
+                        styleName='hello'>
                         <Link
                             to="/">
                             Home
                         </Link>
                     </li>
-                    <li>
+                    <li
+                        styleName='test'>
                         <Link
                             to="/about/me">
                             About
                         </Link>
                         <p
-                            className={styles.caption}>
+                            styleName='caption'>
                             Caption
                         </p>
                     </li>
                 </ul>
+                <button
+                    type="button">
+                    Hello&nbsp;!
+                </button>
             </div>
         );
     }
 }
+
+export default CSSModules(NavigationBar, styles);

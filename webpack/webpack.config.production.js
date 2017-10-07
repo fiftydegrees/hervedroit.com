@@ -11,11 +11,10 @@ let config = {
     devtool: 'hidden-source-map',
     module: {
         loaders: [{
-            test: /\.css$/,
+            test: /\.(css|scss)$/,
             loader: ExtractTextPlugin.extract({
                 fallback: 'style-loader',
-                use: [
-                    {
+                use: [{
                         loader: 'css-loader',
                         options: {
                             minimize: true,
@@ -24,6 +23,8 @@ let config = {
                             importLoaders: 3,
                             sourceMap: true,
                         },
+                    }, {
+                        loader: 'sass-loader',
                     },
                 ]}
             )

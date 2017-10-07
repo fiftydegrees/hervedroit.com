@@ -1,5 +1,16 @@
+
+$backgroundColor: #ff00ff;
+
+.NavigationBar {
+    background-color: $backgroundColor;
+
+    .test {
+        background-color: yellowgreen;
+    }
+}
+
 .NavigationBar ul {
-    background-color: blue;
+    background-color: red;
 }
 
 .NavigationBar  ul > li {

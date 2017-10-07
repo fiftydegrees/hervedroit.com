@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+// import 'styles/modules/_global.scss';
 
 import App from './scenes/App';
-
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 ReactDOM.render(
     <Router>

@@ -1,8 +1,9 @@
 /* eslint-disable */
 
-const settings = require('./webpack.settings.js');
-const path = require('path');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
+const path = require('path');
+const settings = require('./webpack.settings.js');
+const webpack = require('webpack');
 
 let config = {
     context: settings.workingDirectory,
@@ -25,10 +26,6 @@ let config = {
             loaders: [
                 'babel-loader'
             ],
-        }, {
-            test: /\.jsx?$/,
-            include: settings.workingDirectory,
-            loader: 'eslint-loader',
         }],
     },
     plugins: [
@@ -36,6 +33,11 @@ let config = {
             template: `${settings.workingDirectory}/index.html`,
             filename: './index.html',
             inject: 'body',
+        }),
+        new webpack.ProvidePlugin({
+            jQuery: 'jquery',
+            jquery: 'jquery',
+            $: 'jquery',
         })
     ],
 };
