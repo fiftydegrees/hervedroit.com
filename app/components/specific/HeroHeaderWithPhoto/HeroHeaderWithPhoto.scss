@@ -1,0 +1,23 @@
+@import '../../../styles/modules/_colors.scss';
+@import '../../../styles/modules/_fonts.scss';
+
+.HeroHeaderWithPhoto {
+    background-color: $color-black;
+    background-image: url('../../../assets/vectors/heroheader-background0.jpg');
+    background-position: center center;
+    background-size: cover;
+    height: 600px;
+    h1,
+    h2 {
+        color: $color-white;
+    }
+    h1 {
+        font-size: $font-primary-size-title;
+        font-weight: $font-primary-weight-light;
+        margin: 0;
+    }
+    h2 {
+        font-size: $font-primary-size-subtitle;
+        font-weight: $font-primary-weight-light;
+    }
+}

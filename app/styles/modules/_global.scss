@@ -1,3 +1,67 @@
-BODY {
-    background-color: green;
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+@import '_colors.scss';
+@import '_fonts.scss';
+
+:global {
+    BODY {
+        font-family: $font-primary-family;
+        margin: 0;
+        padding: 0;
+    }
+    button.btn {
+        background-color: $color-white;
+        border: none;
+        font-size: $font-primary-size-body;
+        font-weight: $font-primary-weight-bold;
+        padding: 15px 10px;
+        transition: background-color ease-in 0.15s;
+        will-change: background-color;
+        &:hover {
+            // background-color: darken($color: $color-light, $amount: 0.5);
+            border-bottom: 2px solid $color-dark;
+            cursor: pointer;
+        }
+    }
+    p {
+        font-size: $font-primary-size-body;
+    }
+    .flex-container {
+        display: flex;
+    }
+    .flex-d {
+        &.flex-d-column {
+            flex-direction: column;
+        }
+        &.flex-d-row {
+            flex-direction: row;
+        }
+    }
+    .flex-ai {
+        &.flex-ai-center {
+            align-items: center;
+        }
+        &.flex-ai-end {
+            align-items: flex-end;
+        }
+        &.flex-ai-start {
+            align-items: flex-start;
+        }
+    }
+    .flex-jc {
+        &.flex-jc-center {
+            justify-content: center;
+        }
+        &.flex-jc-end {
+            justify-content: flex-end;
+        }
+        &.flex-jc-spacearound {
+            justify-content: space-around;
+        }
+        &.flex-jc-spacebetween {
+            justify-content: space-between;
+        }
+        &.flex-jc-start {
+            justify-content: flex-start;
+        }
+    }
 }

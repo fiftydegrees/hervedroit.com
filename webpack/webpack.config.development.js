@@ -2,6 +2,7 @@
 
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const common = require('./webpack.common.js');
+const path = require('path');
 const merge = require('webpack-merge');
 const settings = require('./webpack.settings.js');
 const combineLoaders = require('webpack-combine-loaders');
@@ -34,26 +35,12 @@ let config = {
             }, {
                 loader: 'sass-loader',
             }]),
-            include: `${settings.workingDirectory}/components`,
-        }, {
-            test: /\.scss$/,
-            loader: combineLoaders([{
-                loader: 'style-loader',
-                options: {
-                    sourceMap: true,
-                },
-            }, {
-                loader: 'css-loader',
-                options: {
-                    importLoaders: true,
-                    modules: true,
-                },
-            }, {
-                loader: 'sass-loader',
-            }]),
         }, {
             test: /\.(png|woff|woff2|eot|ttf|svg)$/,
             loader: 'url-loader?limit=100000',
+        }, {
+            test: /\.jpg$/,
+            loader: 'file-loader',
         }]
     },
     plugins: [

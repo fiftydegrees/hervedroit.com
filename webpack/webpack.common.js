@@ -26,6 +26,14 @@ let config = {
             loaders: [
                 'babel-loader'
             ],
+        }, {
+            test: /\.jsx?$/,
+            loaders: ['eslint-loader'],
+            include: settings.workingDirectory,
+        }, {
+            test: /\.jsx?$/,
+            loaders: ['eslint-loader'],
+            include: path.join(__dirname, '../app/'),
         }],
     },
     plugins: [
