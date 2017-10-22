@@ -1,0 +1,11 @@
+@import '../../../../styles/modules/_colors.scss';
+@import '../../../../styles/modules/_fonts.scss';
+
+.Project {
+    p.title {
+        color: red;
+    }
+    p.about {
+        color: black;
+    }
+}

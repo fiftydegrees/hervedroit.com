@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+// @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
 @import '_colors.scss';
 @import '_fonts.scss';
 
@@ -10,7 +10,7 @@
     }
     button.btn {
         background-color: $color-white;
-        border: none;
+        border: 3px solid $color-dark;
         font-size: $font-primary-size-body;
         font-weight: $font-primary-weight-bold;
         padding: 15px 10px;
@@ -18,12 +18,24 @@
         will-change: background-color;
         &:hover {
             // background-color: darken($color: $color-light, $amount: 0.5);
-            border-bottom: 2px solid $color-dark;
+            border-bottom-color: $color-light;
             cursor: pointer;
         }
     }
     p {
         font-size: $font-primary-size-body;
+    }
+    .divide {
+        display: block;
+        &.divide-10 {
+            height: 10px;
+        }
+        &.divide-20 {
+            height: 20px;
+        }
+        &.divide-50 {
+            height: 50px;
+        }
     }
     .flex-container {
         display: flex;
