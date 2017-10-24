@@ -2,10 +2,55 @@
 @import '../../../../styles/modules/_fonts.scss';
 
 .Project {
-    p.title {
-        color: red;
+    background-color: $color-white;
+    margin-bottom: 15px;
+    padding: 15px 45px;
+    h3.title {
+        color: $color-primary;
+        font-family: $font-secondary-family;
+        font-size: $font-secondary-size-subtitle;
+        & > span.date {
+            color: $color-darklight;
+        }
     }
-    p.about {
-        color: black;
+    span.about {
+        color: $color-black;
+        & > p {
+            :global {
+                span.emphasis {
+                    color: $color-primary;
+                    font-weight: $font-primary-weight-bold;
+                }
+                span.stack {
+                    color: $color-darklight;
+                    font-size: $font-primary-size-caption;
+                    & > span.emphasis {
+                        color: $color-dark;
+                    }
+                }
+            }
+        }
     }
+    .vectors {
+        flex-wrap: wrap;
+        margin-top: 20px;
+        .vector {
+            margin: 0 10px 10px 10px;
+            width: 200px;
+            img {
+                height: 200px;
+            }
+            .caption {
+                color: $color-darklight;
+                text-align: center;
+            }
+        }
+    }
+    button.CTA {
+        margin: 10px 0;
+    }
+}
+
+span.emphasis {
+    color: red;
 }

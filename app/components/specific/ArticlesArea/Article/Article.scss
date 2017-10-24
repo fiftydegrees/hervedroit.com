@@ -3,9 +3,45 @@
 
 .Article {
     p.title {
-        color: red;
+        border-left: 2px solid $color-primary;
+        font-family: $font-secondary-family;
+        font-size: $font-secondary-size-body;
+        margin: 10px;
+        padding: 0 10px;
+        &.color-primary {
+            & > a {
+                color: $color-primary;
+            }
+            &:hover {
+                border-left: 2px solid darken($color: $color-primary, $amount: 20%);
+                & > a {
+                    color: darken($color: $color-primary, $amount: 20%);
+                }
+            }
+        }
+        &.color-secondary {
+            border-left: 2px solid $color-secondary;
+            & > a {
+                color: $color-secondary;
+            }
+            &:hover {
+                border-left: 2px solid darken($color: $color-secondary, $amount: 20%);
+                & > a {
+                    color: darken($color: $color-secondary, $amount: 20%);
+                }
+            }
+        }
     }
     p.about {
-        color: black;
+        color: $color-darklight;
+        font-size: $font-primary-size-caption;
+        margin-top: 0;
+    }
+    .separator {
+        background-color: $color-light;
+        border-radius: 10px;
+        height: 10px;
+        margin: 10px 0;
+        width: 10px;
     }
 }

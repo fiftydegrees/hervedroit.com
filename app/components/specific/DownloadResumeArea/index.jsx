@@ -10,18 +10,22 @@ class DownloadResumeArea extends Component {
                 styleName='DownloadResumeArea'>
                 <p
                     styleName='disclosure'>
-                    This website is not a full resume but a support to go beyond the classic 1-page resume.
+                    {'This website is not a full resume but a support to go beyond the classic 1-page resume.'}
                 </p>
                 <button
-                    className={'btn btn-primary'}
+                    className={'btn btn-secondary'}
                     type="button">
-                    See complete resume
+                    {'See Complete Resume'}
                 </button>
-                <a
-                    alt="Download resume"
-                    href="#">
-                    Or download it as PDF
-                </a>
+                <p
+                    className={'caption'}>
+                    <a
+                        href="http://www.google.com"
+                        rel="noopener noreferrer"
+                        target="_blank">
+                        {'Or download it as PDF'}
+                    </a>
+                </p>
             </div>
         );
     }

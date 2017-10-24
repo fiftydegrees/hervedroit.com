@@ -1,0 +1,47 @@
+{
+    "projects": [{
+        "CTA": "Discover",
+        "key": 0,
+        "link": "https://www.surmonpalier.com",
+        "rawDescription": "<p>First <span class=\"emphasis\">rental/loan service right in your building</span>. Rent, loan, borrow with your doorstep neighborhood.</p><p>After having spent a whole sunday afternoon looking for a drill, I wish I could ask all my building neighbors in a snap knocking on each door. A drill, two seats, or a cooking instrument, just ask (or offer). Similar concepts appeared over the past few years, but they're not easy to use in large urban areas such as Paris, where a single kilometer can sometimes be synonym of a 20 minutes ride.</p><p>I first developed the platform to <span class=\"emphasis\">bring the service to the building I live</span>, and also to improve my skills, specifically on <span class=\"emphasis\">Amazon AWS ecosystem</span> which hosts the service. As a \"low-budget\" communication operation, I pitched the concept in the Paris subway to create a quick and original viral video.</p><p><span class=\"stack\"><span class=\"emphasis\">Stack:</span> Angular, PostgreSQL, NodeJS, Amazon AWS (EC2 / RDS / CloudFront / CloudWatch and related services)</span></p>",
+        "title": "SurMonPalier.com",
+        "vectors": [{
+            "caption": "Hello, caption!",
+            "path": "/test.jpg"
+        }],
+        "year": "2017"
+    }, {
+        "CTA": "View on the App Store",
+        "key": 1,
+        "link": "http://www.fantaasm.com",
+        "rawDescription": "<p>Fantaasm started with a <span class=\"emphasis\">one-night iOS app challenge</span>. The idea is pretty simple: users are prompted to answer yes or no to 70 fantasms. After submission, they get a personal code associated to their selection, which can be exchanged with another user to finally <span class=\"emphasis\">reveal only commun fantasms</span>, so that there's no shame to love someting even if the partner doesn't appreciate it.</p><p>The app is now available on <a alt=\"Fantaasm Official website\" href=\"http://www.fantaasm.com\" target=\"_blank\">fantaasm.com</a>, for free. iOS app <span class=\"emphasis\">offers a $0.99 in-app purchase</span> to reveal all matched fantasms. With no communication, the app has been downloaded over 13 k times and 1.2 k in-app sold. The conversion ratio is pretty high, this topic seems to be a good incentive to drive users to actually pay the price of a coffee.</p><p><span class=\"stack\"><span class=\"emphasis\">Stack:</span> Swift, Angular, MongoDB, NodeJS, Nginx, Dedicated hosting</span></p>",
+        "title": "Fantaasm",
+        "vectors": [{
+            "caption": "Hello, caption!",
+            "path": "/test.jpg"
+        }],
+        "year": "2016 — 2017"
+    }, {
+        "CTA": null,
+        "key": 2,
+        "link": null,
+        "rawDescription": "<p>Photowizz is a photos app I developed along with a friend (UI designer), which lets <span class=\"emphasis\">users take a photo with both front and back cameras at the same time</span>, to <span class=\"emphasis\">share their feeling and their environment</span>. With a 1-year development, we cumulated over <span class=\"emphasis\">40+&nbsp;k users</span> with (and that's the real satisfaction) photos coming in the feed from all around the world. That's a very special feeling to see someone, on the other side of the world, using an app made right in our office.</p><p>The app is no longer available on the App Store due to an overbooked schedule during studies and a lack of time to update and develop new features.</p><p><span class=\"stack\"><span class=\"emphasis\">Stack:</span> Objective-C, Parse.com (formerly), PHP</p>",
+        "title": "Photowizz",
+        "vectors": [{
+            "caption": "Hello, caption!",
+            "path": "/test.jpg"
+        }],
+        "year": "2014 — 2016"
+    }, {
+        "CTA": null,
+        "key": 3,
+        "link": null,
+        "rawDescription": "<p>MakeItBad is a mini-game with a simple concept: <span class=\"emphasis\">you must answer as many questions as possible in 45 seconds, but good answers decrease your score and bad answers improve it</span>. Cocos-2D framework with external lib. such as Flurry / Analytics or Applicasa. $0 budget at launch, 15+&nbsp;k players now, ranked #49 App Store France during a few days.</p><p>As always, without any budget, I found enough cheek to <span class=\"emphasis\">partner with a famous national radio (RadioFG); they replicated the game with auditors each morning while promoting my app for free, crazy!</span></p><p><span class=\"stack\"><span class=\"emphasis\">Stack:</span> Objective-C (Cocos-2D), PHP, MySQL</span></p>",
+        "title": "MakeItBad",
+        "vectors": [{
+            "caption": "Hello, caption!",
+            "path": "/test.jpg"
+        }],
+        "year": "2014"
+    }]
+}

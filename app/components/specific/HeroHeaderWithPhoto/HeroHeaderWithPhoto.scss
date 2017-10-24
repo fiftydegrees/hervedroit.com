@@ -1,12 +1,13 @@
 @import '../../../styles/modules/_colors.scss';
 @import '../../../styles/modules/_fonts.scss';
+@import '../../../styles/modules/_mixins.scss';
 
 .HeroHeaderWithPhoto {
     background-color: $color-black;
     background-image: url('../../../assets/vectors/heroheader-background0.jpg');
     background-position: center center;
     background-size: cover;
-    height: 600px;
+    min-height: 100vh;
     h1,
     h2 {
         color: $color-white;
@@ -19,5 +20,23 @@
     h2 {
         font-size: $font-primary-size-subtitle;
         font-weight: $font-primary-weight-light;
+    }
+    .body {
+        flex-grow: 1;
+    }
+    .herofooter {
+        margin-bottom: 20px;
+        & > .icon {
+            background-image: url('../../../assets/vectors/icon-mouse/icon-mouse.png') no-repeat;
+            @include image-2x('../../../assets/vectors/icon-mouse/icon-mouse@2x.png', 40px, 40px);
+            display: flex;
+            height: 40px;
+            margin: 10px 0;
+            width: 40px;
+        }
+        & > .caption {
+            color: $color-white;
+            font-size: $font-primary-size-caption;
+        }
     }
 }
