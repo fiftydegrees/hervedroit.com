@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 import CSSModules from 'react-css-modules';
-import styles from './ArticlesArea.scss';
+import DSArticles from '../../../assets/data/articles.json';
 import Article from './Article';
+import styles from './ArticlesArea.scss';
+
+const getArticles = () => (DSArticles.articles);
 
 class ArticlesArea extends Component {
     render() {
@@ -39,37 +42,19 @@ class ArticlesArea extends Component {
                     <h3>
                         {'Latest Articles'}
                     </h3>
-                    <Article
-                        title={"Visite du vaisseau amiral et des coffres de la Société Générale"}
-                        link={"http://www.monsieurcurieux.com/2017/09/visite-du-siege-de-la-societe-generale/"}
-                        category={"discover"}
-                        publicationDate={new Date()} />
-                    <Article
-                        title={"Quick notes about Philips Hue API, pros and cons"}
-                        link={"https://medium.com/@hervedroit/quick-notes-about-philips-hue-api-pros-and-cons-1fd85d9684cf"}
-                        category={"development"}
-                        publicationDate={new Date()} />
-                    <Article
-                        title={"Publicités à la télé, dans le métro, sur Facebook, combien ça coûte ?"}
-                        link={"http://www.monsieurcurieux.com/2017/07/publicites-a-la-tele-dans-le-metro-sur-facebook-combien-ca-coute/"}
-                        category={"discover"}
-                        publicationDate={new Date()} />
-                    <Article
-                        title={"How we handle a complex signup form at Spotmyflat"}
-                        link={"https://medium.com/@hervedroit/how-we-handle-a-complex-signup-form-at-spotmyflat-d2be40758e77"}
-                        category={"UX"}
-                        publicationDate={new Date()} />
-                    <Article
-                        title={"Entretien avec Florent, machiniste-receveur"}
-                        link={"http://www.monsieurcurieux.com/2017/07/entretien-florent-machiniste-receveur/"}
-                        category={"discover"}
-                        publicationDate={new Date()} />
-                    <Article
-                        isLast
-                        title={"Apple Simple Deletion Experience"}
-                        link={"https://medium.com/@hervedroit/apple-simple-deletion-experience-972896fc7c6a"}
-                        category={"UX"}
-                        publicationDate={new Date()} />
+                    {
+                        getArticles()
+                            .map((article) => {
+                                return (
+                                    <Article
+                                        category={article.category}
+                                        key={article.key}
+                                        link={article.link}
+                                        publicationDate={article.publicationDate}
+                                        title={article.title} />
+                                );
+                            })
+                    }
                 </div>
             </div>
         );

@@ -1,0 +1,39 @@
+{
+    "articles": [{
+        "category": "discover",
+        "key": 0,
+        "link": "http://www.monsieurcurieux.com/2017/09/visite-du-siege-de-la-societe-generale/?utm_source=hervedroitcom&utm_medium=landing",
+        "publicationDate": "0",
+        "title": "Visite du vaisseau amiral et des coffres de la Société Générale"
+    }, {
+        "category": "discover",
+        "key": 1,
+        "link": "https://medium.com/@hervedroit/quick-notes-about-philips-hue-api-pros-and-cons-1fd85d9684cf?utm_source=hervedroitcom&utm_medium=landing",
+        "publicationDate": "0",
+        "title": "Quick notes about Philips Hue API, pros and cons"
+    }, {
+        "category": "discover",
+        "key": 2,
+        "link": "http://www.monsieurcurieux.com/2017/07/publicites-a-la-tele-dans-le-metro-sur-facebook-combien-ca-coute/?utm_source=hervedroitcom&utm_medium=landing",
+        "publicationDate": "0",
+        "title": "Publicités à la télé, dans le métro, sur Facebook, combien ça coûte ?"
+    }, {
+        "category": "UX",
+        "key": 3,
+        "link": "https://medium.com/@hervedroit/how-we-handle-a-complex-signup-form-at-spotmyflat-d2be40758e77?utm_source=hervedroitcom&utm_medium=landing",
+        "publicationDate": "0",
+        "title": "How we handle a complex signup form at Spotmyflat"
+    }, {
+        "category": "discover",
+        "key": 4,
+        "link": "http://www.monsieurcurieux.com/2017/07/entretien-florent-machiniste-receveur/?utm_source=hervedroitcom&utm_medium=landing?utm_source=hervedroitcom&utm_medium=landing",
+        "publicationDate": "0",
+        "title": "Entretien avec Florent, machiniste-receveur"
+    }, {
+        "category": "UX",
+        "key": 5,
+        "link": "https://medium.com/@hervedroit/apple-simple-deletion-experience-972896fc7c6a?utm_source=hervedroitcom&utm_medium=landing",
+        "publicationDate": "0",
+        "title": "Apple Simple Deletion Experience"
+    }]
+}

@@ -46,7 +46,7 @@ class Article extends Component {
                 </p>
                 <p
                     styleName="about">
-                    {'#'}{this.props.category}&nbsp;{'—'}&nbsp;{this.props.publicationDate.toString()}
+                    {'#'}{this.props.category}
                 </p>
                 {
                     (() => {
