@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import AnalyticsService from '../../../../services/AnalyticsService';
 import CSSModules from 'react-css-modules';
 import styles from './Article.scss';
 
@@ -11,6 +12,24 @@ function getClassFromCategory(category) {
 }
 
 class Article extends Component {
+    constructor(props) {
+        super(props);
+
+        this.navigateToLink = this.navigateToLink.bind(this);
+    }
+    logLinkClick(link) {
+        AnalyticsService
+            .logEvent('Articles',
+                'kClickedArticleLink',
+                `${this.props.title}--${encodeURIComponent(link)}`,
+                null);
+    }
+    navigateToLink(link) {
+        if (link) {
+            window.open(link, '_blank').focus();
+            this.logLinkClick(link);
+        }
+    }
     render() {
         return (
             <div
@@ -19,7 +38,7 @@ class Article extends Component {
                 <p
                     styleName={'title ' + getClassFromCategory(this.props.category)}>
                     <a
-                        href={this.props.link}
+                        onClick={() => this.navigateToLink(this.props.link)}
                         rel="noopener noreferrer"
                         target="_blank">
                         {this.props.title}

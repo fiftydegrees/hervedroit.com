@@ -19,7 +19,7 @@
         font-size: $font-primary-size-caption;
         font-weight: $font-primary-weight-bold;
         margin: 10px 0;
-        padding: 15px 15px;
+        padding: 15px 25px;
         text-transform: uppercase;
         transition: background-color ease-in 0.15s;
         will-change: background-color;
@@ -34,6 +34,11 @@
         &.btn-secondary {
             color: $color-secondary;
             border-color: $color-secondary;
+            &.btn-secondary-inverted {
+                background-color: $color-secondary;
+                border-color: $color-secondary;
+                color: $color-white;
+            }
         }
     }
     a {
@@ -43,6 +48,7 @@
         will-change: color;
         &:hover {
             color: darken($color: $color-primary, $amount: 20%);
+            cursor: pointer;
         }
     }
     p {

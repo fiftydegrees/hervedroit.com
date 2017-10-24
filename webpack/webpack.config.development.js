@@ -1,5 +1,6 @@
 /* eslint-disable */
 
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const common = require('./webpack.common.js');
 const path = require('path');
@@ -9,6 +10,10 @@ const combineLoaders = require('webpack-combine-loaders');
 
 const extractTextPluginConfig = new ExtractTextPlugin('[name].bundle.css');
 const extractVendorsTextPluginConfig = new ExtractTextPlugin('vendors.bundle.css');
+const copyWebpackPluginConfig = new CopyWebpackPlugin([{
+    from: 'assets',
+    to: 'assets',
+}]);
 
 let config = {
     devServer: {
@@ -45,7 +50,8 @@ let config = {
     },
     plugins: [
         extractTextPluginConfig,
-        extractVendorsTextPluginConfig
+        extractVendorsTextPluginConfig,
+        copyWebpackPluginConfig
     ],
     // module: {
     //     loaders: [{
