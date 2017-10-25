@@ -2,6 +2,7 @@
 
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const SitemapPlugin = require('sitemap-webpack-plugin');
 const common = require('./webpack.common.js');
 const path = require('path');
 const merge = require('webpack-merge');
@@ -14,6 +15,7 @@ const copyWebpackPluginConfig = new CopyWebpackPlugin([{
     from: 'assets',
     to: 'assets',
 }]);
+
 
 let config = {
     devServer: {
@@ -51,20 +53,8 @@ let config = {
     plugins: [
         extractTextPluginConfig,
         extractVendorsTextPluginConfig,
-        copyWebpackPluginConfig
-    ],
-    // module: {
-    //     loaders: [{
-    //         test: /\.css$/,
-    //         loader: ExtractTextPlugin.extract('style-loader', 'css-loader'),
-    //     }, {
-    //         test: /\.scss$/,
-    //         loader: ExtractTextPlugin.extract('style-loader', 'css-loader!sass-loader'),
-    //     }]
-    // },
-    // plugins: [
-    //     new ExtractTextPlugin('[name].css')
-    // ],
+        copyWebpackPluginConfig,
+    ]
 };
 
 module.exports = merge(common, config);

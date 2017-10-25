@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
+import AnalyticsService from '../../../../services/AnalyticsService';
 import CSSModules from 'react-css-modules';
 import Lightbox from 'react-image-lightbox';
+import React, { Component } from 'react';
 import styles from './Project.scss';
-import AnalyticsService from '../../../../services/AnalyticsService';
 
 class Project extends Component {
     constructor(props) {

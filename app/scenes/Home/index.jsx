@@ -1,6 +1,7 @@
 import React from 'react';
 import HeroHeaderWithPhoto from '../../components/specific/HeroHeaderWithPhoto';
 import ContactArea from '../../components/specific/ContactArea';
+import Credits from '../../components/specific/Credits';
 import CSSModules from 'react-css-modules';
 import DownloadResumeArea from '../../components/specific/DownloadResumeArea';
 import ArticlesArea from '../../components/specific/ArticlesArea';
@@ -16,6 +17,7 @@ class Home extends React.Component {
                 <ArticlesArea />
                 <ProjectsArea />
                 <ContactArea />
+                <Credits />
             </div>
         );
     }

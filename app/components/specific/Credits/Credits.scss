@@ -1,14 +1,12 @@
 @import '../../../styles/modules/_colors.scss';
 @import '../../../styles/modules/_fonts.scss';
 
-.ContactArea {
-    background-color: $color-white;
+.Credits {
+    background-color: $color-light;
     padding: 50px 0;
-    ul.contacts {
-        list-style: none;
+    ul.credits {
         & > li {
             margin: 10px 0;
-            text-align: center;
         }
     }
 }

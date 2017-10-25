@@ -44,11 +44,12 @@ class ArticlesArea extends Component {
                     </h3>
                     {
                         getArticles()
-                            .map((article) => {
+                            .map((article, index) => {
                                 return (
                                     <Article
                                         category={article.category}
                                         key={article.key}
+                                        isLast={index === getArticles().length - 1}
                                         link={article.link}
                                         publicationDate={article.publicationDate}
                                         title={article.title} />
