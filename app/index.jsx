@@ -8,7 +8,7 @@ import createHistory from 'history/createBrowserHistory';
 import './styles/modules/_global.scss';
 
 ReactGA.initialize('UA-88792899-4', {
-    debug: true,
+    debug: false,
 });
 
 /*
