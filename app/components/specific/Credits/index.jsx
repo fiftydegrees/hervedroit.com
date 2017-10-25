@@ -32,7 +32,7 @@ class Credits extends Component {
                         </a>
                         {'.'}
                         <br />
-                        {'Sources will soon be published, drop me an email is needed!'}
+                        {'Sources will soon be published, drop me an email if needed now!'}
                     </p>
                 </div>
             </div>

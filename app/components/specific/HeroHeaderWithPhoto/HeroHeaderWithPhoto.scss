@@ -8,16 +8,15 @@
     background-position: center center;
     background-size: cover;
     min-height: 100vh;
-    h1,
-    h2 {
-        color: $color-white;
-    }
     h1 {
+        border-bottom: 3px solid $color-primary;
+        color: $color-black;
         font-size: $font-primary-size-title;
-        font-weight: $font-primary-weight-light;
+        font-weight: $font-primary-weight-normal;
         margin: 0;
     }
     h2 {
+        color: $color-dark;
         font-size: $font-primary-size-subtitle;
         font-weight: $font-primary-weight-light;
     }
@@ -35,7 +34,7 @@
             width: 40px;
         }
         & > .caption {
-            color: $color-white;
+            color: $color-primary;
             font-size: $font-primary-size-caption;
         }
     }

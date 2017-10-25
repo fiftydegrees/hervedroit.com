@@ -39,6 +39,9 @@
             width: 200px;
             img {
                 height: 200px;
+                &:hover {
+                    cursor: pointer;
+                }
             }
             .caption {
                 color: $color-darklight;
