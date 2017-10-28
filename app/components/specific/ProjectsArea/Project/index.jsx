@@ -95,7 +95,7 @@ class Project extends Component {
                                         <img
                                             alt="vector"
                                             height="200"
-                                            src={vector.localPath}
+                                            src={vector.localThumbnailPath}
                                             width="200" />
                                         <p
                                             className={'caption'}

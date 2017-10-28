@@ -6,13 +6,20 @@
         "rawDescription": "<p>First <span class=\"emphasis\">rental/loan service right in your building</span>. Rent, loan, borrow with your doorstep neighborhood.</p><p>After having spent a whole sunday afternoon looking for a drill, I wish I could ask all my building neighbors in a snap knocking on each door. A drill, two seats, or a cooking instrument, just ask (or offer). Similar concepts appeared over the past few years, but they're not easy to use in large urban areas such as Paris, where a single kilometer can sometimes be synonym of a 20 minutes ride.</p><p>I first developed the platform to <span class=\"emphasis\">bring the service to the building I live</span>, and also to improve my skills, specifically on <span class=\"emphasis\">Amazon AWS ecosystem</span> which hosts the service. As a \"low-budget\" communication operation, I pitched the concept in the Paris subway to create a quick and original viral video.</p><p><span class=\"stack\"><span class=\"emphasis\">Stack:</span> Angular, PostgreSQL, NodeJS, Amazon AWS (EC2 / RDS / CloudFront / CloudWatch and related services)</span></p>",
         "title": "SurMonPalier.com",
         "vectors": [{
-            "caption": "Hello, caption!",
+            "caption": "Hello, caption! 2",
             "key": 0,
-            "localPath": "assets/vectors/test.jpg"
+            "localPath": "assets/vectors/projects/smpc/smpc0.jpg",
+            "localThumbnailPath": "assets/vectors/projects/smpc/smpc0-thumbnail.jpg"
         }, {
             "caption": "Hello, caption! 2",
             "key": 1,
-            "localPath": "assets/vectors/test2.jpg"
+            "localPath": "assets/vectors/projects/smpc/smpc1.jpg",
+            "localThumbnailPath": "assets/vectors/projects/smpc/smpc1-thumbnail.jpg"
+        }, {
+            "caption": "Hello, caption! 2",
+            "key": 2,
+            "localPath": "assets/vectors/projects/smpc/smpc2.jpg",
+            "localThumbnailPath": "assets/vectors/projects/smpc/smpc2-thumbnail.jpg"
         }],
         "year": "2017"
     }, {
@@ -24,11 +31,28 @@
         "vectors": [{
             "caption": "Hello, caption!",
             "key": 0,
-            "localPath": "assets/vectors/test.jpg"
+            "localPath": "assets/vectors/projects/fantaasm/fantaasm0.jpg",
+            "localThumbnailPath": "assets/vectors/projects/fantaasm/fantaasm0-thumbnail.jpg"
         }, {
             "caption": "Hello, caption! 2",
             "key": 1,
-            "localPath": "assets/vectors/test.jpg"
+            "localPath": "assets/vectors/projects/fantaasm/fantaasm1.jpg",
+            "localThumbnailPath": "assets/vectors/projects/fantaasm/fantaasm1-thumbnail.jpg"
+        }, {
+            "caption": "Hello, caption! 2",
+            "key": 2,
+            "localPath": "assets/vectors/projects/fantaasm/fantaasm2.jpg",
+            "localThumbnailPath": "assets/vectors/projects/fantaasm/fantaasm2-thumbnail.jpg"
+        }, {
+            "caption": "Hello, caption! 2",
+            "key": 3,
+            "localPath": "assets/vectors/projects/fantaasm/fantaasm3.jpg",
+            "localThumbnailPath": "assets/vectors/projects/fantaasm/fantaasm3-thumbnail.jpg"
+        }, {
+            "caption": "Hello, caption! 2",
+            "key": 4,
+            "localPath": "assets/vectors/projects/fantaasm/fantaasm4.jpg",
+            "localThumbnailPath": "assets/vectors/projects/fantaasm/fantaasm4-thumbnail.jpg"
         }],
         "year": "2016 — 2017"
     }, {
@@ -38,13 +62,10 @@
         "rawDescription": "<p>Photowizz is a photos app I developed along with a friend (UI designer), which lets <span class=\"emphasis\">users take a photo with both front and back cameras at the same time</span>, to <span class=\"emphasis\">share their feeling and their environment</span>. With a 1-year development, we cumulated over <span class=\"emphasis\">40+&nbsp;k users</span> with (and that's the real satisfaction) photos coming in the feed from all around the world. That's a very special feeling to see someone, on the other side of the world, using an app made right in our office.</p><p>The app is no longer available on the App Store due to an overbooked schedule during studies and a lack of time to update and develop new features.</p><p>&gt;&nbsp;<a alt=\"iGen article Photowizz presentation\" href=\"https://www.igen.fr/app-store/photowizz-monte-vos-photos-votre-place-109217\" target=\"_blank\">iGeneration article</a></p><p><span class=\"stack\"><span class=\"emphasis\">Stack:</span> Objective-C, Parse.com (formerly), PHP</p>",
         "title": "Photowizz",
         "vectors": [{
-            "caption": "Hello, caption!",
-            "key": 0,
-            "localPath": "assets/vectors/test.jpg"
-        }, {
             "caption": "Hello, caption! 2",
-            "key": 1,
-            "localPath": "assets/vectors/test.jpg"
+            "key": 0,
+            "localPath": "assets/vectors/projects/photowizz/photowizz0.jpg",
+            "localThumbnailPath": "assets/vectors/projects/photowizz/photowizz0.jpg"
         }],
         "year": "2014 — 2016"
     }, {
@@ -54,13 +75,35 @@
         "rawDescription": "<p>MakeItBad is a mini-game with a simple concept: <span class=\"emphasis\">you must answer as many questions as possible in 45 seconds, but good answers decrease your score and bad answers improve it</span>. Cocos-2D framework with external lib. such as Flurry / Analytics or Applicasa. $0 budget at launch, 15+&nbsp;k players now, ranked #49 App Store France during a few days.</p><p>As always, without any budget, I found enough cheek to <span class=\"emphasis\">partner with a famous national radio (RadioFG); they replicated the game with auditors each morning while promoting my app for free, crazy!</span></p><p>&gt;&nbsp;<a alt=\"IONIS Group Interview\" href=\"http://blogs.ionis-group.com/epita/2014/01/herve-droit-etudiant-entrepreneur-appli-mobiles.html\" target=\"_blank\">Interview on the IONIS Group blog</a></p><p><span class=\"stack\"><span class=\"emphasis\">Stack:</span> Objective-C (Cocos-2D), PHP, MySQL</span></p>",
         "title": "MakeItBad",
         "vectors": [{
-            "caption": "Hello, caption!",
+            "caption": "Hello, caption! 2",
             "key": 0,
-            "localPath": "assets/vectors/test.jpg"
+            "localPath": "assets/vectors/projects/makeitbad/makeitbad0.jpg",
+            "localThumbnailPath": "assets/vectors/projects/makeitbad/makeitbad0-thumbnail.jpg"
         }, {
             "caption": "Hello, caption! 2",
             "key": 1,
-            "localPath": "assets/vectors/test.jpg"
+            "localPath": "assets/vectors/projects/makeitbad/makeitbad1.jpg",
+            "localThumbnailPath": "assets/vectors/projects/makeitbad/makeitbad1-thumbnail.jpg"
+        }, {
+            "caption": "Hello, caption! 2",
+            "key": 2,
+            "localPath": "assets/vectors/projects/makeitbad/makeitbad2.jpg",
+            "localThumbnailPath": "assets/vectors/projects/makeitbad/makeitbad2-thumbnail.jpg"
+        }, {
+            "caption": "Hello, caption! 2",
+            "key": 3,
+            "localPath": "assets/vectors/projects/makeitbad/makeitbad3.jpg",
+            "localThumbnailPath": "assets/vectors/projects/makeitbad/makeitbad3-thumbnail.jpg"
+        }, {
+            "caption": "Hello, caption! 2",
+            "key": 4,
+            "localPath": "assets/vectors/projects/makeitbad/makeitbad4.jpg",
+            "localThumbnailPath": "assets/vectors/projects/makeitbad/makeitbad4-thumbnail.jpg"
+        }, {
+            "caption": "Hello, caption! 2",
+            "key": 5,
+            "localPath": "assets/vectors/projects/makeitbad/makeitbad5.jpg",
+            "localThumbnailPath": "assets/vectors/projects/makeitbad/makeitbad5-thumbnail.jpg"
         }],
         "year": "2014"
     }]
