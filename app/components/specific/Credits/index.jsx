@@ -13,7 +13,8 @@ class Credits extends Component {
                     <h3>
                         {'Credits'}
                     </h3>
-                    <p>
+                    <p
+                        className={'body'}>
                         {'This website is developed using '}
                         <a
                             alt="ReactJS Official Website"
@@ -32,7 +33,14 @@ class Credits extends Component {
                         </a>
                         {'.'}
                         <br />
-                        {'Sources will soon be published, drop me an email if needed now!'}
+                        {'Website sources can be found '}
+                        <a
+                            href="https://github.com/fiftydegrees/hervedroit.com"
+                            rel="noopener noreferrer"
+                            target="_blank">
+                            {'here'}
+                        </a>
+                        {'.'}
                     </p>
                 </div>
             </div>

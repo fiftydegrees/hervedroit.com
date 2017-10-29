@@ -1,5 +1,3 @@
-/* eslint-disable */
-
 import AnalyticsService from '../../../../services/AnalyticsService';
 import CSSModules from 'react-css-modules';
 import Lightbox from 'react-image-lightbox';
