@@ -19,6 +19,9 @@
         color: $color-light;
         font-size: $font-primary-size-subtitle;
         font-weight: $font-primary-weight-light;
+        @include smartphoneOnly() {
+            text-align:center;
+        }
     }
     .body {
         flex-grow: 1;

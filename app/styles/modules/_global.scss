@@ -2,9 +2,15 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
 @import '_colors.scss';
 @import '_fonts.scss';
+@import '_mixins.scss';
 @import '_variables.scss';
 
 /* Global Rules */
+
+ul {
+    margin: 0;
+    padding: 0;
+}
 
 :global {
     BODY {
@@ -62,6 +68,18 @@
         line-height: $font-primary-size-body * 1.50;
         &.caption {
             font-size: $font-primary-size-caption;
+        }
+    }
+    .smartphoneOnly {
+        display: none;
+        @include smartphoneOnly() {
+            display: flex;
+        }
+    }
+    .desktopOnly {
+        display: flex;
+        @include smartphoneOnly() {
+            display: none;
         }
     }
     .divide {
@@ -152,6 +170,10 @@
     }
     .section {
         display: flex;
+        padding: 0 50px;
+        @include smartphoneOnly() {
+            padding: 0 20px;
+        }
         h2 {
             border-bottom: 3px solid $color-primary;
             color: $color-black;
@@ -162,6 +184,12 @@
         h3 {
             font-size: $font-primary-size-subtitle;
             font-weight: $font-primary-weight-normal;
+        }
+        h2,
+        h3 {
+            @include smartphoneOnly() {
+                text-align: center;
+            }
         }
         p.body {
             text-align: center;

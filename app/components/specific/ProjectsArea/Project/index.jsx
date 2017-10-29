@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import AnalyticsService from '../../../../services/AnalyticsService';
 import CSSModules from 'react-css-modules';
 import Lightbox from 'react-image-lightbox';
@@ -75,7 +77,9 @@ class Project extends Component {
                             );
                         }
                     })()}
-                    &nbsp;<span styleName='date'>({this.props.year})</span>
+                    <br
+                        className={'smartphoneOnly'} />
+                    <span styleName='date'>({this.props.year})</span>
                 </h3>
                 <span
                     styleName={'about'}

@@ -1,12 +1,21 @@
 @import '../../../styles/modules/_colors.scss';
 @import '../../../styles/modules/_fonts.scss';
+@import '../../../styles/modules/_mixins.scss';
 
 .Credits {
     background-color: $color-light;
-    padding: 50px 0;
+    p {
+        @include smartphoneOnly() {
+            text-align:center;
+        }
+    }
     ul.credits {
         & > li {
             margin: 10px 0;
+            @include smartphoneOnly() {
+                margin: 0;
+                padding: 0;
+            }
         }
     }
 }

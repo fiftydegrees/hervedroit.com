@@ -20,14 +20,15 @@ class ContactArea extends Component {
     render() {
         return (
             <div
-                className={'flex-container'}
+                className={'flex-container section'}
                 styleName='ContactArea'>
                 <div
-                    className={'area flex-d flex-d-column flex-ai flex-ai-center flex-jc flex-jc-center section'}>
+                    className={'area flex-d flex-d-column flex-ai flex-ai-center flex-jc flex-jc-center'}>
                     <h2>
                         {'Let\'s Keep In Touch'}
                     </h2>
-                    <p>
+                    <p
+                        className={'body'}>
                         {'Want to tell me something crazy? Need help? Looking for an experienced freelance? Say hi!'}
                     </p>
                     <ul

@@ -6,10 +6,10 @@ class Credits extends Component {
     render() {
         return (
             <div
-                className={'flex-container'}
+                className={'flex-container section'}
                 styleName='Credits'>
                 <div
-                    className={'area flex-d flex-d-column flex-ai flex-ai-center flex-jc flex-jc-center section'}>
+                    className={'area flex-d flex-d-column flex-ai flex-ai-center flex-jc flex-jc-center'}>
                     <h3>
                         {'Credits'}
                     </h3>
