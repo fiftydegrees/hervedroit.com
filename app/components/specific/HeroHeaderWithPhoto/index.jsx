@@ -1,8 +1,26 @@
+import AnalyticsService from '../../../services/AnalyticsService';
 import React, { Component } from 'react';
 import CSSModules from 'react-css-modules';
 import styles from './HeroHeaderWithPhoto.scss';
 
 class HeroHeaderWithPhoto extends Component {
+    constructor(props) {
+        super(props);
+        this.navigateToLink = this.navigateToLink.bind(this);
+    }
+    logLinkClick(link) {
+        AnalyticsService
+            .logEvent('Articles',
+                'kClickedBannerLink',
+                `${this.props.title}--${encodeURIComponent(link)}`,
+                null);
+    }
+    navigateToLink(link) {
+        if (link) {
+            window.open(link, '_blank').focus();
+            this.logLinkClick(link);
+        }
+    }
     render() {
         return (
             <div
@@ -27,6 +45,18 @@ class HeroHeaderWithPhoto extends Component {
                         styleName="caption">
                         Slide Down For More
                     </div>
+                </div>
+                <div
+                    className={'flex-container flex-d flex-d-column flex-ai flex-ai-center flex-jc flex-jc-center'}
+                    styleName={'alert'}>
+                    <p>
+                        Pitching My New Project In Paris Subway
+                    </p>
+                    <button
+                        className={'btn btn-primary'}
+                        onClick={() => this.navigateToLink('https://www.youtube.com/watch?v=phbZgwH-fwI')}>
+                        Watch On YouTube
+                    </button>
                 </div>
             </div>
         );

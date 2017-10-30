@@ -1,0 +1,48 @@
+BODY {
+    background-color: #00aeef;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+}
+
+iframe.video {
+    border: none;
+    display: block;
+    height: 600px;
+    margin: auto;
+    outline: none;
+    width: 900px;
+}
+
+.sharing {
+    display: block;
+    margin: auto;
+    margin-top: 40px;
+    width: 400px;
+}
+.sharing > .through {
+    display: block;
+    margin: auto;
+    text-align: center;
+    width: 100%;
+}
+.sharing > .through > label {
+    display: block;
+}
+.sharing > .through > input[type=text] {
+    background-color: #ffffff;
+    border: none;
+    display: block;
+    font-size: 20px;
+    margin: auto;
+    margin: 5px 0 15px 0;
+    outline: none;
+    padding: 15px 0;
+    text-align: center;
+    width: 100%;
+}
+.sharing > .through a {
+    color: white;
+    text-decoration: underline;
+    font-weight: 700;
+}
