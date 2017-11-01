@@ -8,7 +8,7 @@ function getClassFromCategory(category) {
         development: 'color-primary',
         UX: 'color-primary',
         discover: 'color-secondary',
-    }[category] || undefined);
+    }[category] || 'color-primary');
 }
 
 class Article extends Component {

@@ -30,8 +30,14 @@
         "publicationDate": "0",
         "title": "Entretien avec Florent, machiniste-receveur"
     }, {
-        "category": "UX",
+        "category": "marketing",
         "key": 5,
+        "link": "https://www.slideshare.net/HervDROIT/facebook-ads-from-setup-to-reporting-and-optimization",
+        "publicationDate": "0",
+        "title": "Facebook Ads - From Setup to Reporting and Optimization"
+    }, {
+        "category": "UX",
+        "key": 6,
         "link": "https://medium.com/@hervedroit/apple-simple-deletion-experience-972896fc7c6a?utm_source=hervedroitcom&utm_medium=landing",
         "publicationDate": "0",
         "title": "Apple Simple Deletion Experience"

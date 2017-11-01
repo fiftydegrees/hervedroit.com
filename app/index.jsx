@@ -7,7 +7,7 @@ import { Router } from 'react-router-dom';
 import createHistory from 'history/createBrowserHistory';
 import './styles/modules/_global.scss';
 
-ReactGA.initialize('UA-88792899-4', {
+ReactGA.initialize('UA-88792899-3', {
     debug: false,
 });
 
